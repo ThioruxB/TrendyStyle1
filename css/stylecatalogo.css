@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Cinzel:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Peralta&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0;
+}
+/*selector de etiqueta*/
+header{
+    background:#3A3B3D;
+    padding: 20px ;
+    border-bottom: 4px solid #5E6264;
+    display: flex;
+    justify-content: space-between;
+}
+header img{
+    width: 10vw;
+}
+header h1{
+    font-family: "Cinzel", serif;
+        font-size: 3.4vw;
+        color: #999EA1;
+       margin-top: 15px;
+       text-shadow: 3px 3px 3px #000;
+}
+@media (max-width: 450px) {
+    header h1{
+       font-size:3.8vw ;
+    }
+}
+/*navegacion*/
+nav{
+    background-color: #4C5256;
+    padding: 10px 50px ;
+    border-bottom: 4px solid #1D1D1D;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav a{
+    text-decoration: none;
+    padding-right: 20px;
+    color: #E3E3E3;
+    font-family: "Kalam", cursive;
+    font-weight: bold;
+    text-shadow: 4px 2px 4px #1D1D1D;
+    font-size: 1.8vw;
+}
+nav a:hover{
+    color:#1D1D1D ;
+    text-shadow: 4px 2px 4px #E3E3E3;
+    transition: 400ms;
+}
+/*footer*/
+footer{
+    background-color:#1D1D1D;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.contengotodo{
+    display: flex;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    color: #E3E3E3;
+    margin: 20px;
+    font-family: "Cinzel", serif;
+    font-size: 1.2vw;
+}
+#logofooter{
+    margin-top: 10px;
+    width: 10vw;
+    height: 7vw;
+}
+.img{
+    margin-top: 10px;
+   display: flex;
+   align-items: center;
+    flex-direction: column;
+    border-right: 2px solid #E3E3E3;
+  
+}
+.img img{
+    width: 4vw;
+}
+.img h2{
+    padding: 10px;
+    color: #E3E3E3;
+    font-family: "Kalam", cursive;
+    font-size: 1.5vw;
+}
+
+/* Catálogo */
+.catalogo {
+    display: flex;
+    justify-content: center;
+}
+
+.fotos {
+    display: flex;
+    flex: 2;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.fotos  div {
+    flex: 1  300px;
+    margin: 10px;
+    background: #3A3B3D;
+    text-align: center; 
+    font-family: "Anta", sans-serif;
+    color: #E3E3E3;
+    text-shadow: 8px 4px 6px #000;
+    border-radius: 12px;
+}
+
+.fotos img {
+    width: 100%; 
+    border-radius: 12px;
+    height: 70%;
+}
+
+.botones{
+    font-family: "Cinzel", serif;
+    text-decoration: none;
+    color:#00d9ff ;
+    text-shadow: 4px 2px 4px #5E6264;
+    border-radius: 12px;
+    font-size: 1.8vw;
+    padding: 4px;
+    border: #E3E3E3 solid 2px;
+   background: #131010;
+    font-weight: bold;
+    
+}
+.botones:hover{
+    color: #E3E3E3;
+    background: #000;
+    transition: 500ms;
+}
+
+/* Catálogo -- Pagina donde se ven los productos dependiendo categoria escogida */
+.catalogos {
+    display: flex;
+    justify-content: center;
+}
+
+.foto {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.foto div {
+    flex: 1  300px;
+    margin: 10px;
+    background: #3A3B3D;
+    text-align: center; 
+    font-family: "Anta", sans-serif;
+    color: #E3E3E3;
+    text-shadow: 8px 4px 6px #000;
+    border-radius: 12px;
+}
+
+.foto img {
+    width: 100%; 
+    border-radius: 12px;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; 
+}
+
+.boton button {
+    background: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 5px; 
+}
+
+.boton img {
+    width: 50px; 
+    padding: 10px;
+}
+.anav{
+    width: 5vw;
+}
+.anav i:hover{ 
+    text-shadow: 4px 2px 4px #000;
+    transition: 400ms;
+}
+.profoto img {
+    width: 7vw;
+    border-radius: 12px;
+}
+
+tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.table:hover {
+    background-color: #e3e3e3;
+}
+
+.custom-modal {
+    background-color: #e3e3e3;
+}
+.col-md-12{
+    background-color: #E3E3E3;
+}
+.table-price {
+    background-color: #e3e3e3;
+    padding: 10px; 
+}
+.table td,
+.table th {
+    background-color: #e3e3e3; 
+    border-bottom: 2px solid #000;
+    text-align: center;
+}
+.modal-header{
+    background-color: #e3e3e3; 
+}
+.modal-body{
+    background-color: #e3e3e3; 
+}
+.modal-footer{
+    background-color: #e3e3e3; 
+}
+.table tbody tr td,
+.table thead tr th  {
+    background-color: #e3e3e3;
+    border-bottom: 2px solid #000;
+    text-align: center;
+}
+.modal{
+    font-family: "Kalam", cursive;
+    font-weight: bold;
+}
+.modal h2{
+    text-align: center;
+}

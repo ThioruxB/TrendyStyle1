@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Cinzel:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Peralta&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0;
+}
+/*selector de etiqueta*/
+header{
+    background:#3A3B3D;
+    padding: 20px ;
+    border-bottom: 4px solid #5E6264;
+    display: flex;
+    justify-content: space-between;
+}
+header img{
+    width: 10vw;
+}
+header h1{
+    font-family: "Cinzel", serif;
+        font-size: 3.4vw;
+        color: #999EA1;
+       margin-top: 15px;
+       text-shadow: 3px 3px 3px #000;
+}
+@media (max-width: 450px) {
+    header h1{
+       font-size:3.8vw ;
+    }
+}
+/*navegacion*/
+nav{
+    background-color: #4C5256;
+    padding: 10px 50px ;
+    border-bottom: 4px solid #1D1D1D;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav a{
+    text-decoration: none;
+    padding-right: 20px;
+    color: #E3E3E3;
+    font-family: "Kalam", cursive;
+    font-weight: bold;
+    text-shadow: 4px 2px 4px #1D1D1D;
+    font-size: 1.8vw;
+}
+nav a:hover{
+    color:#1D1D1D ;
+    text-shadow: 4px 2px 4px #E3E3E3;
+    transition: 400ms;
+}
+/*pago*/
+.container-fluid h1{
+    font-family: "Cinzel", serif;
+    font-weight: bold;
+}
+.container-fluid{
+    font-family: "Kalam", cursive;
+} 
+@media(max-width:450px){
+    .container-fluid{
+        width: 90vw;
+    }
+    .btn{
+        margin-top: 10px;
+    }
+}
+/*footer*/
+footer{
+    background-color:#1D1D1D;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.contengotodo{
+    display: flex;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    color: #E3E3E3;
+    margin: 20px;
+    font-family: "Cinzel", serif;
+    font-size: 0.9vw;
+    
+}
+#logofooter{
+    margin-top: 20px;
+    width: 10vw;
+    height: 7vw;
+}
+
+.img{
+    margin-top: 10px;
+   display: flex;
+   align-items: center;
+    flex-direction: column;
+    border-right: 2px solid #E3E3E3;
+  height: 10vw;
+}
+.img img{
+    width: 4vw;
+}
+.img h2{
+    padding: 10px;
+    color: #E3E3E3;
+    font-family: "Kalam", cursive;
+    font-size: 1.5vw;
+}
+@media(max-width:450px){
+    .texto{
+        margin-top: 2px;
+    }
+}

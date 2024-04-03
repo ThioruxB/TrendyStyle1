@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.2/css/dataTables.dataTables.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style_dashboard.css">
+    <link rel="stylesheet" href="../iconos/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--Barra de navegacion-->
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg">
+
+                    <img class="navbar-brand" src="img/logo.png" alt="">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="dashboard.html"><i
+                                        class="fa-solid fa-house fa-xl"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../error4044.html"><i class="fa-solid fa-bell fa-xl"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../ingreso.html"><i class="fa-solid fa-door-open fa-xl"></i></a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+
+        <!--Menu de funcionalidades-->
+        <div class="row">
+            <div class="col-md-3 menu">
+                <!--img del perfil-->
+                <div class="row perfiles">
+                    <img src="img/user1.png" class="xd" alt="iconempleado">
+                    <h4>Hola usuario</h4>
+                    <p>Empleado</p>
+                    <button class="btn btn-outline-light col-4" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Ver perfil</button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <img src="img/user1.png" alt="user">
+                                <h1 class="modal-title col align-items-center " id="exampleModalLabel">Usuario</h1>
+                                <h4>Rol: Empleado</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Telefono: 3015823912</p>
+                                <p>Correo: elsublime444@gmail.com</p>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-secondary"><a href="editar_perfil.html" class="nav-link">Modificar perfil</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--menu de funcionalidades-->
+                <h3>Inventario</h3>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="borrar_producto.html"><i
+                                class="fa-solid fa-eye"></i>Ver productos </a></li>
+                    <li class="nav-item"><a class="nav-link" href="form_products.html"><i
+                                class="fa-solid fa-plus"></i>Agregar productos</a></li>
+                </ul>
+
+             
+            </div>
+                    <div class="col-md-9 tableposi ">
+                        <h2>Productos con poco stock</h2>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th class="fs-4 text-center"  colspan="2"><i class="fa-solid fa-bookmark fa-lg"></i> Marca</th>
+                                    <th class="fs-4" scope="col"><i class="fa-solid fa-shirt fa-lg"></i> Producto</th>
+                                    <th class="fs-4" scope="col"><i class="fa-solid fa-boxes-stacked fa-lg"></i> Cantidad/Stock</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>ADIDAS</td>
+                                    <td><img src="img/adidas.png" alt="adidas"></td>
+                                        <td>Sudadera azul</td>
+                                    <td>
+                                        5 / 35
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Gucci</td>
+                                    <td><img src="img/gucci.png" alt="gucci"></td>
+                                    <td>
+                                        Bluza marron
+                                    </td>
+                                    <td>
+                                        1 / 10
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Zara</td>
+                                    <td><img src="img/zara.png" alt="zara"></td>
+                                    <td>
+                                        Pantalon white fang
+                                    </td>
+                                    <td>
+                                        3 / 40
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Nike</td>
+                                    <td><img src="img/nike.png" alt="nike"></td>
+                                    <td>
+                                        zapatos rojos
+                                    </td>
+                                    <td>
+                                       7 / 30
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Chanel</td>
+                                    <td><img src="img/chanel.png" alt="chanel"></td>
+                                    <td>
+                                        Camisa de caracol TV
+                                    </td>
+                                    <td>
+                                        9 / 50
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>HyM</td>
+                                    <td><img src="img/hym.png" alt=""></td>
+                                    <td>
+                                        Faja color piel
+                                    </td>
+                                    <td>
+                                        2 / 20
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+               <!-- pie de pagina -->
+    <footer> 
+        <img id="logofooter" src="img/logo.png" alt="">
+        <div class="contengotodo">
+            <div class="img">
+                <img src="img/contacto.png" alt="contactoicon">
+                <h2>Escribenos</h2>
+               </div>
+               <div class="texto">
+                <p>
+                    bustamanteparrabryanalexander@gmail.com
+                </p>
+                <p>
+                    luisandrestovarr2019@gmail.com
+                </p>
+                <p>
+                    hoonluv4@gmail.com
+                </p>
+                <p>
+                    sebastiangalindo@gmail.com
+                </p>
+               </div>         
+        </div>
+   <div class="contengotodo">
+    <div class="img">
+        <img src="img/llamada.png" alt="">
+        <h2>LLamanos</h2>
+    </div>
+    <div class="texto">
+        <p>3015823912</p>
+        <p>313 4177450</p>
+        <p>315 2594007</p>
+        <p>317 5158394</p>
+    </div>
+   </div>
+       
+    </footer>
+            </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.0.2/js/dataTables.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Cinzel:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Peralta&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+header{
+    background:#3A3B3D;
+    padding: 20px ;
+    border-bottom: 4px solid #5E6264;
+    display: flex;
+    justify-content: space-between;
+}
+header img{
+    width: 150px;
+}
+header h1{
+    font-family: "Cinzel", serif;
+        font-size: 3.4vw;
+        color: #999EA1;
+       margin-top: 15px;
+       text-shadow: 3px 3px 3px #000;
+}
+.navbar{
+    background-color: #4C5256;
+    
+}
+.navbar-toggler{
+    background-color: #E3E3E3;
+}
+.nav-link:hover{
+    text-shadow: 1px 1px 2px  #E3E3E3;
+    font-size: 1.3vw;
+}
+.navbar a{
+    color: #E3E3E3;
+    font-family: "Kalam", cursive;
+    font-weight: bold;
+    text-shadow: 4px 2px 4px #1D1D1D;
+    font-size: 1.8vw;
+   
+}
+.navbar a:hover{
+    color:#1D1D1D ;
+    text-shadow: 4px 2px 4px #E3E3E3;
+    transition: 400ms;
+}
+.navbar a:focus{
+    color:#1D1D1D ;
+    text-shadow: 4px 2px 4px #E3E3E3;
+  
+}
+.dropdown-menu{
+    background-color: #4C5256;
+}
+.card{
+    margin-left: 10px;
+    border: 2px solid #1D1D1D;
+    box-shadow: 4px 2px 2px 1px #4C5256;
+}
+.card-img-top{
+    height: 350px;
+}
+.btn{
+    color: #555252;
+    border: 2px solid #555252;
+    font-size: 1.5vw;
+}
+.btn a{
+    text-decoration: none;
+    color: #555252;
+}
+.btn a:hover{
+    color: #000000;
+}
+.btn:hover{
+    color: #000000;
+    border: 2px solid #000000;
+    box-shadow: 4px 2px 4px 3px #3A3B3D;
+}
+.row{
+    font-family: "Peralta", serif;
+}
+/*footer*/
+footer{
+    background-color:#1D1D1D;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.contengotodo{
+    display: flex;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    color: #E3E3E3;
+    margin: 10px;
+    font-family: "Cinzel", serif;
+    font-size: 0.9vw;
+}
+#logofooter{
+    margin-top: 20px;
+    width: 10vw;
+    height: 7vw;
+}
+.img{
+    margin-top: 10px;
+   display: flex;
+   align-items: center;
+    flex-direction: column;
+    border-right: 2px solid #E3E3E3;
+    height: 120px;
+}
+@media (max-width: 450px) {
+    .img {
+        font-size: 1.3vw;
+        height: 70px;
+    }
+}
+.img img{
+    width: 4vw;
+}
+.img h2{
+    padding: 10px;
+    color: #E3E3E3;
+    font-family: "Kalam", cursive;
+    font-size: 1.5vw;
+}
+

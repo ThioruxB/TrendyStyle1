@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Cinzel:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Peralta&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+}
+/*selector de etiqueta*/
+header{
+    background:#3A3B3D;
+    padding: 20px ;
+    border-bottom: 4px solid #5E6264;
+    display: flex;
+    justify-content: space-between;
+}
+header img{
+    width: 10vw;
+}
+header h1{
+    font-family: "Cinzel", serif;
+        font-size: 3.4vw;
+        color: #999EA1;
+       margin-top: 15px;
+       text-shadow: 3px 3px 3px #000;
+}
+@media (max-width: 450px) {
+    header h1{
+       font-size:3.8vw ;
+    }
+}
+/*navegacion*/
+nav{
+    background-color: #4C5256;
+    padding: 10px 50px ;
+    border-bottom: 4px solid #1D1D1D;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav a{
+    text-decoration: none;
+    padding-right: 20px;
+    color: #E3E3E3;
+    font-family: "Kalam", cursive;
+    font-weight: bold;
+    text-shadow: 4px 2px 4px #1D1D1D;
+    font-size: 1.8vw;
+}
+nav a:hover{
+    color:#1D1D1D ;
+    text-shadow: 4px 2px 4px #E3E3E3;
+    transition: 400ms;
+}
+/*img principal*/
+main{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    background-image: url(../img/fondo2.jpg);
+    padding: 30%;
+    background-size: 100% 100%;
+    
+}
+main a{
+    border-radius: 12px;
+    border: 1px solid #000000;
+    text-decoration: none;
+    color: #1D1D1D;
+    font-family: "Kalam", cursive;
+    font-weight: bolder;
+    font-size: 2.8vw;
+    background-color: #999ea183;
+    display: flex;
+    justify-content: center;
+    text-shadow: 6px 3px 6px #E3E3E3;
+}
+main a:hover{
+    color: #030303;
+    text-shadow: 6px 3px 6px #E3E3E3;
+    zoom: 0.9;
+    background-color: #999ea15c;
+    transition: 500ms;
+}
+/*Quienes somos?*/
+.QS{
+    background-image: url(../img/QSimg2.jpg);
+    padding: 10% 5%;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    
+}
+.QS h1{
+    font-family: "Cinzel", serif;
+    color:#f28b79 ;
+    text-shadow: 6px 3px 6px #ff0000;
+    font-size: 2.8vw;
+}
+.QS h3{
+    color: #E3E3E3;
+    font-family: "Exo 2", sans-serif;
+    font-size: 1.8vw;
+}
+/*mision y vision*/
+.MyV{
+    display: flex;
+    justify-content:space-around ;
+}
+.MyV img{
+    width: 35%;
+   
+    margin: 20px 0;
+}
+section,aside{
+    border: 1px solid #1D1D1D;
+    width: 40%;
+    text-align: center;
+    padding: 25px;
+    margin: 30px;
+}
+.MyV h2{
+    color:#ff2600 ;
+    text-shadow: 4px 2px 4px #5E6264;
+    font-family: "Peralta", serif;
+    font-size: 3.2vw;
+    
+}
+.MyV p{
+    font-family: "Anta", sans-serif;
+        margin-bottom: 25px;
+        font-size: 1.7vw;
+}
+.MyV img{
+    width: 20%;
+}
+
+/*footer*/
+footer{
+    background-color:#1D1D1D;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.contengotodo{
+    display: flex;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    color: #E3E3E3;
+    margin: 20px;
+    font-family: "Cinzel", serif;
+    font-size: 1.2vw;
+}
+#logofooter{
+    margin-top: 10px;
+    width: 10vw;
+    height: 7vw;
+}
+.img{
+    margin-top: 10px;
+   display: flex;
+   align-items: center;
+    flex-direction: column;
+    border-right: 2px solid #E3E3E3;
+  
+}
+.img img{
+    width: 4vw;
+}
+.img h2{
+    padding: 10px;
+    color: #E3E3E3;
+    font-family: "Kalam", cursive;
+    font-size: 1.5vw;
+}
+
+/*flecha*/
+#devolver{
+    position: fixed;
+    bottom: 10px;
+    right: 2%;
+    width: 4vw;
+}
+#devolver:hover{
+   opacity: 0.8;
+   zoom: 1.1;
+   transition: 500ms;
+}
+@media (max-width: 450px) {
+    #devolver {
+        bottom: 10px;
+        width: 4vw;
+        left: 2%; /* Asegúrate de seleccionar el elemento en el media query */
+        right: initial; /* Restaura la propiedad right */
+    }
+}

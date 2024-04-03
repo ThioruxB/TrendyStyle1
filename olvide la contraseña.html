@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="../Practica/iconos/css/all.min.css">
+    <title>Olvidé la contraseña</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- 1 fila: Barra de Navegación -->
+        <div class="row navega">
+            <nav class="navbar navbar-expand-lg bg-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Iniciar Sesión</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="registro.html">Registrarse</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- 2 fila: formulario-->
+        <div class="row mt-4">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <!-- formulario -->
+                <div class="card shadow-lg p-3 mb-5 bg-body-secondary rounded">
+                    <div class="card-header d-flex justify-content-center bg-body-secondary">
+                        <img src="img/logo.jpeg" class="card-img-top img-fluid" alt="TrendyStyle">
+                    </div>
+                    <div class="card-body">
+                        <!-- Formulario -->
+                        <form action="ingreso.html" class="was-validated">
+                            <div class="mb-3">
+                                <label for="InputEmail" class="form-label">Correo Electrónico</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+                                    <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" required>
+                                    <div class="invalid-feedback">
+                                        Por favor ingresa un correo válido.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 d-flex justify-content-center">
+                                    <button onclick="Correo()" class="btn btn-dark col-10" id="btnAlerta">Enviar correo</button>
+                                </div>
+                            </div>
+                            <div class="alert alert-success mensaje ocultoInputs mt-4 text-center " role="alert" style="display: none; width: 35vw;margin-left: 50px; ">
+                                <h3>¡CORREO INGRESADO EXITOSAMENTE!</h3>
+                                Se envió un correo con instrucciones para la recuperación de su clave.
+                            </div>
+                            <div class="mb-3 ocultoInputs" style="display: none;">
+                                <label for="InputCode" class="form-label">Código de verificación</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1"><i class="fas fa-lock"></i></span>
+                                    <input type="password" class="form-control" id="InputCode" required>
+                                    <div class="invalid-feedback">
+                                        Por favor ingresa el código de verificación correctamente.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3 ocultoInputs" style="display: none;">
+                                <label for="InputPassword" class="form-label">Nueva contraseña</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1"><i class="fas fa-lock"></i></span>
+                                    <input type="password" class="form-control" id="InputPassword" required>
+                                    <div class="invalid-feedback">
+                                        Por favor ingresa tu nueva contraseña.
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <div class="mb-3 ocultoInputs" style="display: none;">
+                                <label for="InputConfirmPassword" class="form-label">Confirmar contraseña</label>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1"><i class="fas fa-lock"></i></span>
+                                    <input type="password" class="form-control" id="InputConfirmPassword" required>
+                                    <div class="invalid-feedback">
+                                        Por favor confirma tu nueva contraseña.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ocultoInputs" style="display: none;">
+                                <div class="col-md-12 d-flex justify-content-center">
+                                    <button onclick="cambiarclave()" type="submit" class="btn btn-dark col-10" id="btnChangePassword">Cambiar mi contraseña</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.0.2/js/dataTables.js"></script>
+    <script>
+        //sweetalert
+        function cambiarclave(){
+            Swal.fire({
+  title: "Contraseña cambiada correctamente!",
+  text: "vuelve al inicio de sesion",
+  icon: "success"
+});
+        }
+       
+        //ocultar
+        function Correo() {
+            const botonCorreo = document.getElementById('btnAlerta');
+            const oculto = document.querySelectorAll('.ocultoInputs');
+
+            botonCorreo.addEventListener('click', function () {
+                if (this.click) {
+                    oculto.forEach(element => {
+                        element.style.display = 'block';
+                    });
+                } else {
+                    oculto.forEach(element => {
+                        element.style.display = 'none';
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+</html>
